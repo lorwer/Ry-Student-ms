@@ -10,6 +10,7 @@
                 :unique-opened="true"
                 :active-text-color="settings.theme"
                 :collapse-transition="false"
+                :default-openeds="['/system']"
                 mode="vertical"
             >
                 <sidebar-item
@@ -39,6 +40,7 @@ export default {
             const { meta, path } = route;
             // if set path, the sidebar will highlight the path you set
             if (meta.activeMenu) {
+                console.log(meta);
                 return meta.activeMenu;
             }
             return path;

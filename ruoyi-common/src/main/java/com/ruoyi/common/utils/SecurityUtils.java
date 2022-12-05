@@ -117,4 +117,6 @@ public class SecurityUtils
     {
         return userId != null && 1L == userId;
     }
+
+
 }
